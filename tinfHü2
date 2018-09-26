@@ -1,0 +1,47 @@
+
+TINF ASSIGNMENT 02 
+
+
+-> fork :  fork()  creates  a new process by duplicating the calling process.
+                    It has the same data as the Parents process. You use it for other Code paths
+
+->stat:             These funktion returns informations about a file. You dont need permissions.
+                    The stats are pointed in a a buffer.
+
+-> kill:            kill command to terminates stalled or unwanted processes without having to log out or restart the server.
+
+-> mmap:            creates a new mapping in the virtual address space of the
+                    calling process.  The starting address for the new mapping is
+                    specified in addr.  The length argument specifies the length of the
+                    mapping
+
+-> chmod:           This manual page documents the GNU version of chmod. chmod changes the file mode bits
+                    of each given file according to mode, which can be either a symbolic representation of changes
+                    to make, or an octal number representing the bit pattern for the new mode bits.
+
+-> waitpid:         All of these system calls are used to wait for state changes in a child of the calling process,
+                    and obtain information about the child whose state has changed. A state change is considered to be:
+                    the child terminated; the child was stopped by a signal; or the child was resumed by a signal.
+
+Fail Conditions
+
+-> fork:            fails if maximum processes are reached or memory is full
+
+-> exec:            fails if the process image is invalid or false filename
+
+-> unlink:          fails if the file is already unlinked/not found or the file is used by another process or not allowed to delete because of its security.
+
+-> read:            fails if the file doesn't exist, or because of no  premissions. or a DIR or simly an I/O error not caused by the system call
+                    itself.
+
+-> mount:           fails if read only DIR, corrupt files, wrong path or source already mounted.
+
+->chmod:            fails if used false filepath
+
+-> kill:              fails if invalid PPID is used
+
+TRAPS:
+
+A trap is used to enter kernel mode. The system ( kernel ) instruction is loaded and the trap is called and those loaded instructions will be done.
+
+
